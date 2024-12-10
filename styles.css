@@ -1,3 +1,32 @@
+/* Réinitialisation des marges et des bordures */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applique une police générique */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+    background-color: #0078d4; /* Couleur bleu de Microsoft */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du titre */
 h1 {
-   color: blue;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
 }
