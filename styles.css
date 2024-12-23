@@ -1,32 +1,80 @@
-/* Réinitialisation des marges et des bordures */
+/* Styles globaux */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Applique une police générique */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 20px;
 }
 
-/* Conteneur principal */
 .container {
-    background-color: #0078d4; /* Couleur bleu de Microsoft */
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style du titre */
 h1 {
-    color: white;
     text-align: center;
-    font-size: 36px;
-    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"]:focus {
+    outline: none;
 }
