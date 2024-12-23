@@ -1,9 +1,10 @@
-/* Styles globaux */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -15,10 +16,22 @@ body {
     max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Applique une police générique */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+/* Conteneur principal */
+.container {
+    background-color: #0078d4; /* Couleur bleu de Microsoft */
+
+}
+
 
 h1 {
     text-align: center;
@@ -77,4 +90,5 @@ button[type="submit"]:hover {
 
 button[type="submit"]:focus {
     outline: none;
+
 }
